@@ -17,9 +17,11 @@ h2 {
   align-items: center;
   justify-content: center;
 }
+
+.message-card,
 .login-card,
 .signup-card {
-  background: #2f3144ca !important;
+  background: #2f3144dc !important;
 }
 .form-text {
   color: rgb(179, 174, 174) !important;
@@ -27,4 +29,21 @@ h2 {
 
 label {
   color: rgb(224, 223, 223);
+}
+.message-card p {
+  color: rgb(236, 236, 236);
+  font-size: 1.5rem;
+}
+.message-card .delete-btn {
+  margin-top: 3rem;
+  padding: 1.5rem 3rem 0.9rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  color: white;
+  background-color: #1890ff;
+  cursor: pointer;
+}
+.delete-btn:hover {
+  background-color: #188fffcc;
 }
