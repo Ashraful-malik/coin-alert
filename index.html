@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- halfmoon css -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -11,21 +12,19 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- halfmoon css -->
     <link
       href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="css/style.css" />
-    <title>price alert</title>
-  </head>
 
-  <!-- NavBar  -->
+    <title>home</title>
+  </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar bg-dark-light">
       <!-- Navbar brand -->
-      <a href="#" class="navbar-brand text-white">
+      <a href="./index.html" class="navbar-brand text-white">
         <i class="fas fa-chart-bar"></i>
         Price Alert
       </a>
@@ -76,107 +75,64 @@
         </div>
       </div>
     </nav>
-
-    <section class="hero">
-      <div class="card">
-        <div class="header">
-          <i class="fas fa-chart-line"></i>
-          <h1>Price Alert</h1>
-        </div>
-        <div class="container pt-5">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col">
-                <label>Send me an</label>
-              </div>
-              <div class="col-11">
-                <select
-                  class="control w-300 mw-full"
-                  id="area-of-specialization"
-                  required="required"
-                >
-                  <option value="" selected="selected" disabled="disabled">
-                    Select how to get message
-                  </option>
-                  <option value="sms">SMS</option>
-                  <option value="email">EMAIL</option>
-                </select>
-                <label>as</label>
-              </div>
+    <section class="home">
+      <div class="container">
+        <!-- First row -->
+        <div class="row">
+          <div class="col-md-6"">
+            <div class="body-title  ">
+              <h2><span>Crypto</span> Coin Alert System</h2>
+              <p class="body-subtitle  ">
+                <i class="fas fa-bolt"></i>
+                know more about Cryptocurrency set notifications
+                <br />
+                of crypto coins prices.
+              </p>
+              <button type="submit" class="btn body_button">
+             <a href="form.html"> Get Started Free <i class="fas fa-arrow-right"></i></a>
+              </button>
             </div>
           </div>
-          <div class="row pt-10">
-            <div class="col"><label>Soon as</label></div>
-            <div class="col-11">
-              <select
-                class="control w-200 mw-full"
-                id="area-of-specialization"
-                required="required"
-              >
-                <option value="" selected="selected" disabled="disabled">
-                  Select coins
-                </option>
-                <option value="Bitcoin">Bitcoin</option>
-                <option value="Dogecoin">Dogecoin</option>
-                <option value="Litecoin">Litecoin</option>
-                <option value="Polkadot">Polkadot</option>
-
-                <option value="Chainlink">Chainlink</option>
-
-                <option value="Tether">Tether</option>
-
-                <option value="Ethereum">Ethereum</option>
-              </select>
-              <label>Goes</label>
+          <div class="col-md-6"">
+            <div class="crypto_image">
+              <img
+                src="./image/crypto_image.svg"
+                class="coinimage"
+                alt="crypto image"
+              />
             </div>
           </div>
-          <div class="row pt-10">
-            <div class="col">
-              <select
-                class="control w-150 mw-full"
-                id="area-of-specialization"
-                required="required"
-              >
-                <option value="" selected="selected" disabled="disabled">
-                  Select your area of specialization
-                </option>
-
-                <option value="back-end">Above</option>
-                <option value="full-stack">Below</option>
-              </select>
-              <label>The Price of</label>
-            </div>
-          </div>
-          <div class="row pt-10">
-            <div class="col mb-5">
-              <input type="number" placeholder="0.00" class="number-input" />
-            </div>
-            <div class="col-9">
-              <select
-                class="control w-200 mw-full"
-                id="area-of-specialization"
-                required="required"
-              >
-                <option value="" selected="selected" disabled="disabled">
-                  Select currency
-                </option>
-                <option value="Dollors">Doller (USD)</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="bottom_message">
-            <p class="bottom_subtitle">
-              <i class="fas fa-bolt"></i>
-              The price of <span>BTC</span> is currently
-              <span>35,515.07 USD</span>
-            </p>
-          </div>
-          <button class="setalert-btn" type="submit">set Alert</button>
-        </div>
+        </div>        
+      </div>
+      <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#6c63ff"
+            fill-opacity="1"
+            d="M0,64L60,90.7C120,117,240,171,360,202.7C480,235,600,245,720,229.3C840,213,960,171,1080,160C1200,149,1320,171,1380,181.3L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+      <!--crypto -->
+      <div class="crypto-prices">
+        <div
+          class="livecoinwatch-widget-5 livecoinwatch"
+          lcw-base="USD"
+          lcw-color-tx="white"
+          lcw-marquee-1="coins"
+          lcw-marquee-2="movers"
+          lcw-marquee-items="10"
+        ></div>
       </div>
     </section>
-    <!-- dark mode function   -->
+
+    <script
+      defer
+      src="https://www.livecoinwatch.com/static/lcw-widget.js"
+    ></script>
+    <!-- halfmoon js -->
+    <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+
     <script type="text/javascript">
       // Dark mode toggle demo
       const icon = document.getElementById("icon");
@@ -184,11 +140,5 @@
         halfmoon.toggleDarkMode();
       };
     </script>
-    <!-- Content wrapper -->
-    <!-- Requires halfmoon.js for the dropdowns -->
-
-    <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
   </body>
-
-  <!-- halfmoon Js -->
 </html>

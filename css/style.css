@@ -130,6 +130,9 @@ a:hover {
   border: 2px solid #34da9a;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+.body_button a {
+  color: #6c63ff;
+}
 .home .body_button:hover {
   background-color: transparent;
   border: 2px solid #34da9a;
