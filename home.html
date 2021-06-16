@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- halfmoon css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>home</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar bg-dark-light">
+      <!-- Navbar brand -->
+      <a href="#" class="navbar-brand text-white">
+        <i class="fas fa-chart-bar"></i>
+        Price Alert
+      </a>
+      <div class="darkmode-btn">
+        <i class="fas fa-cloud-moon" id="icon"></i>
+      </div>
+
+      <!-- text-monospace = font-family shifted to monospace -->
+      <!-- Navbar nav -->
+
+      <!-- Navbar form (inline form) -->
+      <form class="form-inline d-none d-md-flex ml-auto">
+        <!-- d-none = display: none, d-md-flex = display: flex on medium screens and up (width > 768px), ml-auto = margin-left: auto -->
+        <button class="btn bg-dark shadow-sm" type="submit">
+          <a href="./login.html">Login</a>
+        </button>
+        <button class="btn bg-dark shadow-sm" type="submit">
+          <a href="./signup.html">SignUp</a>
+        </button>
+      </form>
+
+      <!-- Navbar content (with the dropdown menu) -->
+      <div class="navbar-content d-md-none ml-auto">
+        <!-- d-md-none = display: none on medium screens and up (width > 768px), ml-auto = margin-left: auto -->
+        <div class="dropdown with-arrow">
+          <button
+            class="btn"
+            data-toggle="dropdown"
+            type="button"
+            id="navbar-dropdown-toggle-btn-1"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div
+            class="dropdown-menu dropdown-menu-right w-200"
+            aria-labelledby="navbar-dropdown-toggle-btn-1"
+          >
+            <!-- w-200 = width: 20rem (200px) -->
+            <div class="dropdown-content">
+              <button class="btn bg-dark shadow-sm" type="submit">
+                <a href="./login.html">Login</a>
+              </button>
+              <button class="btn bg-dark shadow-sm" type="submit">
+                <a href="./signup.html">SignUp</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="home">
+      <div class="container">
+        <!-- First row -->
+        <div class="row">
+          <div class="col-md-6"">
+            <div class="body-title">
+              <h2><span>Crypto</span> Coin Alert System</h2>
+              <p class="body-subtitle">
+                <i class="fas fa-bolt"></i>
+                know more about Cryptocurrency set notifications
+                <br />
+                of crypto coins prices.
+              </p>
+              <button type="submit" class="btn body_button">
+                Get Started Free
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6"">
+            <div class="crypto_image">
+              <img
+                src="./image/crypto_image.svg"
+                class="coinimage"
+                alt="crypto image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#6c63ff"
+            fill-opacity="1"
+            d="M0,64L60,90.7C120,117,240,171,360,202.7C480,235,600,245,720,229.3C840,213,960,171,1080,160C1200,149,1320,171,1380,181.3L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+      <!--crypto -->
+      <div class="crypto-prices">
+        <div
+          class="livecoinwatch-widget-5 livecoinwatch"
+          lcw-base="USD"
+          lcw-color-tx="white"
+          lcw-marquee-1="coins"
+          lcw-marquee-2="movers"
+          lcw-marquee-items="10"
+        ></div>
+      </div>
+    </section>
+
+    <script
+      defer
+      src="https://www.livecoinwatch.com/static/lcw-widget.js"
+    ></script>
+    <!-- halfmoon js -->
+    <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+
+    <script type="text/javascript">
+      // Dark mode toggle demo
+      const icon = document.getElementById("icon");
+      icon.onclick = function () {
+        halfmoon.toggleDarkMode();
+      };
+    </script>
+  </body>
+</html>
