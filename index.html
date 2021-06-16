@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- halfmoon css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>price alert</title>
+  </head>
+
+  <!-- NavBar  -->
+  <body>
+    <nav class="navbar bg-dark-light">
+      <!-- Navbar brand -->
+      <a href="#" class="navbar-brand text-white">
+        <i class="fas fa-chart-bar"></i>
+        Price Alert
+      </a>
+      <div class="darkmode-btn">
+        <i class="fas fa-cloud-moon" id="icon"></i>
+      </div>
+
+      <!-- text-monospace = font-family shifted to monospace -->
+      <!-- Navbar nav -->
+
+      <!-- Navbar form (inline form) -->
+      <form class="form-inline d-none d-md-flex ml-auto">
+        <!-- d-none = display: none, d-md-flex = display: flex on medium screens and up (width > 768px), ml-auto = margin-left: auto -->
+        <button class="btn bg-dark shadow-sm" type="submit">
+          <a href="./login.html">Login</a>
+        </button>
+        <button class="btn bg-dark shadow-sm" type="submit">
+          <a href="./signup.html">SignUp</a>
+        </button>
+      </form>
+
+      <!-- Navbar content (with the dropdown menu) -->
+      <div class="navbar-content d-md-none ml-auto">
+        <!-- d-md-none = display: none on medium screens and up (width > 768px), ml-auto = margin-left: auto -->
+        <div class="dropdown with-arrow">
+          <button
+            class="btn"
+            data-toggle="dropdown"
+            type="button"
+            id="navbar-dropdown-toggle-btn-1"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div
+            class="dropdown-menu dropdown-menu-right w-200"
+            aria-labelledby="navbar-dropdown-toggle-btn-1"
+          >
+            <!-- w-200 = width: 20rem (200px) -->
+            <div class="dropdown-content">
+              <button class="btn bg-dark shadow-sm" type="submit">
+                <a href="./login.html">Login</a>
+              </button>
+              <button class="btn bg-dark shadow-sm" type="submit">
+                <a href="./signup.html">SignUp</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="card">
+        <div class="header">
+          <i class="fas fa-chart-line"></i>
+          <h1>Price Alert</h1>
+        </div>
+        <div class="container pt-5">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <label>Send me an</label>
+              </div>
+              <div class="col-11">
+                <select
+                  class="control w-300 mw-full"
+                  id="area-of-specialization"
+                  required="required"
+                >
+                  <option value="" selected="selected" disabled="disabled">
+                    Select how to get message
+                  </option>
+                  <option value="sms">SMS</option>
+                  <option value="email">EMAIL</option>
+                </select>
+                <label>as</label>
+              </div>
+            </div>
+          </div>
+          <div class="row pt-10">
+            <div class="col"><label>Soon as</label></div>
+            <div class="col-11">
+              <select
+                class="control w-200 mw-full"
+                id="area-of-specialization"
+                required="required"
+              >
+                <option value="" selected="selected" disabled="disabled">
+                  Select coins
+                </option>
+                <option value="Bitcoin">Bitcoin</option>
+                <option value="Dogecoin">Dogecoin</option>
+                <option value="Litecoin">Litecoin</option>
+                <option value="Polkadot">Polkadot</option>
+
+                <option value="Chainlink">Chainlink</option>
+
+                <option value="Tether">Tether</option>
+
+                <option value="Ethereum">Ethereum</option>
+              </select>
+              <label>Goes</label>
+            </div>
+          </div>
+          <div class="row pt-10">
+            <div class="col">
+              <select
+                class="control w-150 mw-full"
+                id="area-of-specialization"
+                required="required"
+              >
+                <option value="" selected="selected" disabled="disabled">
+                  Select your area of specialization
+                </option>
+
+                <option value="back-end">Above</option>
+                <option value="full-stack">Below</option>
+              </select>
+              <label>The Price of</label>
+            </div>
+          </div>
+          <div class="row pt-10">
+            <div class="col mb-5">
+              <input type="number" placeholder="0.00" class="number-input" />
+            </div>
+            <div class="col-9">
+              <select
+                class="control w-200 mw-full"
+                id="area-of-specialization"
+                required="required"
+              >
+                <option value="" selected="selected" disabled="disabled">
+                  Select currency
+                </option>
+                <option value="Dollors">Doller (USD)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- <div class="row mt-10">
+            <div class="col"><label>On</label></div>
+            <div class="col-11">
+              <select
+                class="control w-300 mw-full"
+                id="area-of-specialization"
+                required="required"
+              >
+                <option value="" selected="selected" disabled="disabled">
+                  Select your area of specialization
+                </option>
+                <option value="front-end"></option>
+                <option value="back-end"></option>
+              </select>
+            </div>
+          </div> -->
+
+          <div class="bottom_message">
+            <p class="bottom_subtitle">
+              <i class="fas fa-bolt"></i>
+              The price of <span>BTC</span> is currently
+              <span>35,515.07 USD</span>
+            </p>
+          </div>
+          <button class="setalert-btn" type="submit">set Alert</button>
+        </div>
+      </div>
+    </section>
+    <!-- dark mode function   -->
+    <script type="text/javascript">
+      // Dark mode toggle demo
+      const icon = document.getElementById("icon");
+      icon.onclick = function () {
+        halfmoon.toggleDarkMode();
+      };
+    </script>
+    <!-- Content wrapper -->
+    <!-- Requires halfmoon.js for the dropdowns -->
+
+    <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+  </body>
+
+  <!-- halfmoon Js -->
+</html>

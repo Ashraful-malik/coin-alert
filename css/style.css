@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Mukta:wght@300&family=Roboto+Slab:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Hammersmith One", sans-serif;
+}
+body {
+  /* background: #272a39; */
+  background: white;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+label {
+  font-weight: bold;
+  color: #34da9a;
+  font-size: 1.6rem;
+}
+.fa-chart-bar {
+  margin: 0 1rem 0 1rem;
+  color: rgb(206, 76, 76);
+}
+.fa-chart-line {
+  font-size: 4rem;
+  padding-right: 2rem;
+  color: rgb(206, 76, 76);
+  box-sizing: border-box;
+}
+h1 {
+  color: #34da9a;
+}
+/* .card { */
+/* dark color */
+/* background-color: #35374271; */
+
+/* light color */
+/* background-color: white; */
+/* } */
+.control {
+  height: 3.5rem;
+  background: none;
+  /* border: 1px solid #a24e70; */
+  border: 1px solid #5352ed;
+  color: rgb(122, 122, 122);
+  border-radius: 5px;
+  font-size: 1.7rem;
+}
+.control:hover {
+  background-color: #272a39;
+  border: 1px solid #a24e70;
+  color: white;
+}
+.number-input {
+  height: 3.5rem;
+  background: none;
+  /* border: 1px solid #a24e70; */
+  border: 1px solid #5352ed;
+
+  color: rgb(119, 119, 119);
+  border-radius: 5px;
+}
+.bottom_message {
+  padding-top: 2rem;
+}
+.bottom_subtitle {
+  padding-top: 2rem;
+  color: rgb(97, 97, 97);
+}
+.fa-bolt {
+  color: rgb(206, 76, 76);
+}
+span {
+  letter-spacing: 0.2rem;
+  color: #34da9a;
+}
+.setalert-btn {
+  padding: 1rem 4rem;
+  margin-top: 1rem;
+  background: none;
+  border-radius: 5px;
+  border: 2px solid #34da9a;
+  color: rgb(253, 129, 129);
+  font-size: 1.7rem;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+.darkmode-btn {
+  color: rgb(221, 221, 221);
+  margin: 2rem 0 1rem 2rem;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transform: rotate(-11deg);
+}

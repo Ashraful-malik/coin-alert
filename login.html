@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/form.css" />
+    <!-- halfmoon css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css"
+      rel="stylesheet"
+    />
+    <title>signup</title>
+  </head>
+  <body>
+    <div class="login-form">
+      <!-- signup -->
+      <div class="row">
+        <div class="col">
+          <div class="card login-card">
+            <h2 class="text-center">Login</h2>
+            <form action="..." method="...">
+              <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
+
+              <div class="form-group">
+                <label for="username" class="required">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="email "
+                  required="required"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password" class="required">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder="Password"
+                  required="required"
+                />
+                <div class="form-text">
+                  Must be at least 8 characters long, and contain at least one
+                  special character.
+                </div>
+              </div>
+
+              <label class="pb-5"
+                >Create account <a href="./signup.html">Signup</a></label
+              >
+              <input
+                class="btn btn-primary btn-block"
+                type="submit"
+                value="Login"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- halfmoon Js -->
+    <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+  </body>
+</html>
