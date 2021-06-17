@@ -1,37 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Mukta:wght@300&family=Roboto+Slab:wght@300&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
-body {
-  /* background: #272a39 !important; */
-}
+/* ---------Login/signUp form styling------------ */
 h2 {
   color: #1890ff;
   font-family: "Hammersmith One", sans-serif;
 }
+
 .login-form,
 .signup-form {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.message-card,
 .login-card,
 .signup-card {
-  background: #2f3144dc !important;
+  border: none !important;
 }
 .form-text {
   color: rgb(179, 174, 174) !important;
 }
 
-label {
-  color: rgb(224, 223, 223);
+/* -------message.html page styling --------*/
+
+.message-card {
+  background-color: white;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-left: 3px solid #fa8072;
+}
+.message-card h2 {
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 1rem;
 }
 .message-card p {
-  color: rgb(236, 236, 236);
+  color: rgb(70, 68, 68);
+  font-family: "Open Sans", sans-serif;
   font-size: 1.5rem;
 }
 .message-card .delete-btn {
@@ -41,9 +49,9 @@ label {
   font-weight: bold;
   border-radius: 5px;
   color: white;
-  background-color: #1890ff;
+  background-color: #fa8072;
   cursor: pointer;
 }
 .delete-btn:hover {
-  background-color: #188fffcc;
+  background-color: #f8a298;
 }

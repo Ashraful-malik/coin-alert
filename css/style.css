@@ -1,14 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Mukta:wght@300&family=Roboto+Slab:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 * {
   margin: 0;
   padding: 0;
   font-family: "Hammersmith One", sans-serif;
   box-sizing: border-box;
 }
-body {
-  /* background: #272a39; */
-  background: white;
+/* --------- styling of navbar---------------- */
+.nav-link {
+  color: white;
+  font-size: 15px;
+  margin-left: 2rem;
 }
+
+/* -----styling of form.html page  ---------*/
 .header {
   display: flex;
   align-items: center;
@@ -33,17 +38,10 @@ label {
 h1 {
   color: #34da9a;
 }
-/* .card { */
-/* dark color */
-/* background-color: #35374271; */
 
-/* light color */
-/* background-color: white; */
-/* } */
 .control {
   height: 3.5rem;
   background: none;
-  /* border: 1px solid #a24e70; */
   border: 1px solid #5352ed;
   color: rgb(122, 122, 122);
   border-radius: 5px;
@@ -57,9 +55,7 @@ h1 {
 .number-input {
   height: 3.5rem;
   background: none;
-  /* border: 1px solid #a24e70; */
   border: 1px solid #5352ed;
-
   color: rgb(119, 119, 119);
   border-radius: 5px;
 }
@@ -103,7 +99,7 @@ a:hover {
   transform: rotate(-11deg);
 }
 
-/* styling  of home.html page  */
+/*----- styling  of index.html page  ----*/
 .body-title h2 {
   color: black;
   margin-top: 10rem;
@@ -127,15 +123,15 @@ a:hover {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-weight: bold;
-  border: 2px solid #34da9a;
+  border: 2px solid #fa8072;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .body_button a {
-  color: #6c63ff;
+  color: #fa8072;
 }
 .home .body_button:hover {
   background-color: transparent;
-  border: 2px solid #34da9a;
+
   box-shadow: 2px 2px 2px rgb(85, 84, 84);
 }
 
@@ -144,14 +140,100 @@ svg {
   bottom: 0;
   width: 100%;
 }
-.home .crypto-prices {
+/* .home  */
+.crypto-prices {
   position: fixed;
   bottom: 0;
   width: 100%;
   overflow: hidden;
+  height: 7rem;
 }
-/* mobile responsive */
 
+/* ------------------ Styling of pricing.html page--------------------- */
+
+.pricing .green {
+  text-align: center;
+  color: #8c86ff;
+  font-size: 4.5rem;
+  letter-spacing: 1px;
+}
+.pricing .red {
+  margin-top: 2rem;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+  color: #fa8072;
+}
+.pricing .blue-border {
+  border: 2px solid #8c86ff !important;
+}
+.pricing .card {
+  border: 2px solid #34da9a;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.pricing .card-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+}
+.pricing .plan-price {
+  text-align: center;
+  font-size: 5rem;
+}
+.pricing .price-discount {
+  font-size: 1.3rem;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 3rem;
+  letter-spacing: 1px;
+}
+.pricing .list-items {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+.pricing .list-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(110, 109, 109);
+}
+.pricing .chechmark {
+  margin-right: 12px;
+  width: 2rem;
+  margin-top: 2px;
+}
+.pricing .list-header {
+  font-size: 1.6rem;
+}
+.pricing .card-renderbutton {
+  margin-top: 5rem;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+  justify-content: center;
+  background-color: #dff1ff;
+  padding: 1rem 0 1rem 0;
+  font-size: 1.7rem;
+  border-radius: 10rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.pricing .arrow-text:hover {
+  color: rgb(78, 199, 246);
+}
+
+/* mobile responsive css */
+
+/* -------------mobile responsive navbar styling----------  */
+
+@media only screen and (max-width: 700px) {
+  .nav-link {
+    color: black;
+  }
+}
+
+/* index.html page mobile responsive  */
 @media only screen and (max-width: 500px) {
   .home .body-title h2 {
     font-size: 2.7rem;
@@ -162,7 +244,7 @@ svg {
     text-align: center;
   }
   .home .body_button {
-    margin-left: 9rem;
+    margin-left: 5rem;
   }
   svg {
     display: none;
@@ -171,7 +253,12 @@ svg {
     margin-left: 2rem;
   }
   .crypto-prices .livecoinwatch {
-    background-color: rgb(27, 27, 27) !important;
+    background-color: rgb(53, 53, 53) !important;
     -webkit-mask-image: none !important;
+    border-radius: 0px !important;
+    margin-left: 0px !important;
+  }
+  .second-card {
+    margin-bottom: 9rem;
   }
 }
