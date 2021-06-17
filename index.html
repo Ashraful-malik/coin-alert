@@ -20,6 +20,7 @@
 
     <title>home</title>
   </head>
+
   <body>
     <!-- Navbar -->
     <nav class="navbar bg-dark-light">
@@ -28,9 +29,10 @@
         <i class="fas fa-chart-bar"></i>
         Price Alert
       </a>
-      <ul class="navbar-nav d-none d-md-flex"> <!-- d-none = display: none, d-md-flex = display: flex on medium screens and up (width > 768px) -->
+      <ul class="navbar-nav d-none d-md-flex">
+        <!-- d-none = display: none, d-md-flex = display: flex on medium screens and up (width > 768px) -->
         <li class="nav-item active">
-          <a href="#" class="nav-link">Links</a>
+          <a href="#about" class="nav-link">About</a>
         </li>
         <li class="nav-item">
           <a href="./pricing.html" class="nav-link">Pricing</a>
@@ -83,54 +85,64 @@
     <section class="home">
       <div class="container">
         <!-- First row -->
-        <div class="row ">
+        <div class="row">
           <div class="col-md-6"">
-            <div class="body-title  ">
-              <h2><span>Crypto</span> Coin Alert System</h2>
-              <p class="body-subtitle  ">
-                <i class="fas fa-bolt"></i>
-                know more about Cryptocurrency set notifications
-                <br />
-                of crypto coins prices.
-              </p>
-              <button type="submit" class="btn body_button">
-             <a href="form.html"> Get Started Free <i class="fas fa-arrow-right"></i></a>
-              </button>
-            </div>
+          <div class="body-title">
+            <h2><span>Crypto</span> Coin Alert System</h2>
+            <p class="body-subtitle">
+              <i class="fas fa-bolt"></i>
+              know more about Cryptocurrency set notifications
+              <br />
+              of crypto coins prices.
+            </p>
+            <button type="submit" class="btn body_button">
+              <a href="form.html">
+                Get Started Free <i class="fas fa-arrow-right"></i
+              ></a>
+            </button>
           </div>
-          <div class="col-md-6"">
-            <div class="crypto_image">
-              <img
-                src="./image/crypto_image.svg"
-                class="coinimage"
-                alt="crypto image"
-              />
-            </div>
-          </div>
-        </div>        
+        </div>
+        <div class="col-md-6"">
+        <div class="crypto_image">
+          <img
+            src="./image/crypto_image.svg"
+            class="coinimage"
+            alt="crypto image"
+          />
+        </div>
       </div>
-      <div class="wave">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path
-            fill="#6c63ff"
-            fill-opacity="1"
-            d="M0,64L60,90.7C120,117,240,171,360,202.7C480,235,600,245,720,229.3C840,213,960,171,1080,160C1200,149,1320,171,1380,181.3L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-          ></path>
-        </svg>
-      </div>
-      <!--crypto -->
-      <div class="crypto-prices">
-        <div
-          class="livecoinwatch-widget-5 livecoinwatch"
-          lcw-base="USD"
-          lcw-color-tx="white"
-          lcw-marquee-1="coins"
-          lcw-marquee-2="movers"
-          lcw-marquee-items="10"
-        ></div>
-      </div>
+
+      <!--crypto bottom prices -->
     </section>
 
+    <!----- About Section------>
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-content">
+          <h2>About us</h2>
+          <p>
+            Alrt Coin helpyou to get alerted with real time crypto values ,so
+            you can notified when your price values goes up. Get ready to earn
+            realmoney with smart step. Lets shake hand with us.
+          </p>
+        </div>
+        <div class="howtouse-image">
+          <h3 class="ml-10">How it works</h3>
+          <img src="./image/howtouse.png" class="timeline-image"alt="image"
+        </div>
+      </div>
+      <div class="works"></div>
+    </section>
+    <div class="crypto-prices">
+      <div
+        class="livecoinwatch-widget-5 livecoinwatch"
+        lcw-base="USD"
+        lcw-color-tx="black"
+        lcw-marquee-1="coins"
+        lcw-marquee-2="movers"
+        lcw-marquee-items="10"
+      ></div>
+    </div>
     <script
       defer
       src="https://www.livecoinwatch.com/static/lcw-widget.js"
